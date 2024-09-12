@@ -1,0 +1,92 @@
+header {
+    background-color: #005f73;
+    color: white;
+}
+.nav-bar{
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    /*color: #696969;*/
+    margin-left: 20px;
+}
+nav a{
+    color: white;
+    /*font-weight: bold;*/
+    font-size: larger;
+}
+/*#main-content {
+    background-image: url('images/bckgrnd image.png');        
+    background-size: cover; 
+    background-position: center; 
+    width: auto;
+    height:auto; 
+    position: relative;
+    background-repeat: no-repeat; 
+} */
+.services {
+    /* background-color: ; */
+    padding: 20px;
+    /*text-align: left; */
+}  
+.services.h2{
+    color : #007bff;
+}
+table {
+    background-color: #C0C0C0;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+  }
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+.imagecontainer{
+    float: left;    
+    padding: 20px;
+    margin-left: 2rem;
+    
+    /*margin: 5px;    
+    width: 180px;
+    */
+}
+.videocontainer{       
+    padding: 50px;    
+}
+.audiocontainer{
+    padding-top: 100px;
+    padding-left: 650px;
+}
+.aboutus {
+    padding-top: 10px;
+    /* background-color: #FFFF99; */    
+    text-align: left;
+    font-size: large;
+    font-style: italic;
+}
+.contact{
+    background-color: bisque;
+}
+
+.chat{
+    padding-left: 5px;
+    background-color: #C0C0C0 
+}
+.submit{
+    padding-top: 10px;
+    padding-left: 160px;
+    padding-bottom: 10px;
+
+}
+/*button{
+    position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+}*/
+
