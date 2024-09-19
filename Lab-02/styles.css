@@ -1,0 +1,254 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color:#333;;
+  color: white;
+}
+
+nav .left p {
+  font-size: 1.5rem;
+}
+
+nav .right a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+nav .right a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+.hero-section .text {
+  max-width: 600px;
+}
+
+.hero-section .text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-section .text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.hero-section .links a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.hero-section .links a:hover {
+  background-color: #ddd;
+}
+
+.hero-section .headshot img {
+  width: 250px;
+  border-radius: 50%;
+}
+
+/* Skills Section */
+#skills {
+  padding: 50px;
+}
+
+#skills table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#skills th,
+#skills td {
+  text-align: left;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Certification Gallery */
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery figure {
+  width: 150px;
+  text-align: center;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.gallery img:hover{
+  transform: scale(1.1);
+}
+
+/* Media Section */
+.media {
+  padding: 50px;
+}
+
+.video-container,
+.audio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+video,
+audio {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Contact Section */
+#contact form {
+  display: inline-block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#contact input,
+#contact textarea {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+#contact input[type="submit"] {
+  width: auto;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#contact input[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Footer */
+.footer footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #bb0101;
+  color: white;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-section .headshot {
+    margin-top: 20px;
+  }
+
+  .hero-section .text h2 {
+    font-size: 2rem;
+  }
+
+  nav .right a {
+    font-size: 0.875rem;
+    margin: 0 10px;
+  }
+
+  #skills th,
+  #skills td {
+    font-size: 0.875rem;
+  }
+
+  #skills table {
+    font-size: 0.9rem;
+  }
+
+  .gallery {
+    justify-content: center;
+  }
+
+  .gallery figure {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav .right {
+    margin-top: 10px;
+  }
+
+  .hero-section .text h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-section .text p {
+    font-size: 0.875rem;
+  }
+
+  .hero-section .links a {
+    font-size: 0.875rem;
+    padding: 8px;
+  }
+
+  .headshot img {
+    width: 200px;
+  }
+
+  #skills table {
+    font-size: 0.85rem;
+  }
+
+  #contact input,
+  #contact textarea {
+    font-size: 0.875rem;
+  }
+
+  footer {
+    font-size: 0.875rem;
+  }
+}
