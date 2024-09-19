@@ -1,6 +1,6 @@
 ##INFO6150
 
-##Assignment-1 of INFO610 by Yatish G N (gotteghallinanjapp.y@northeastern.edu)
+##Assignment-1 by Yatish G N (gotteghallinanjapp.y@northeastern.edu)
 
 ###Interior Designer Website
 
