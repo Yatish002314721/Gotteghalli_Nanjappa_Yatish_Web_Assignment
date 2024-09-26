@@ -1,0 +1,55 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-align: center
+}
+
+body {
+  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+
+.socialmediaicons ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.socialmediaicons ul li {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.socialmediaicons ul li img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.socialmediaicons{
+	text-align: center;
+}
+.nuid{
+  text-align: center;
+  font-size: 24px;
+}
+
+.dropDownTextArea{
+  display: none;
+}
+
+.hide{
+	display: block;
+}
+
+#button {
+	color:#fff;
+	background-color: orange;
+	border-radius: 3px;
+	border:2px solid orange;
+	margin: 0 auto;
+}
+#button[disabled]
+{
+ background-color: grey;
+ border:2px solid gray;
+ cursor: not-allowed;
+}
