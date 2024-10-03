@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script src="./script.js"></script>
+	<title>Feedback</title>
+	<link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+	<div id="container">
+		<main>
+			<h2>Feedback </h2>
+			<h3>Love something? Hate something? Let us know!</h3>
+			Note : Fields marked with an asterisk(*) are mandatory
+			<br /><br />
+
+			<form method="post" novalidate name="myForm" id="myForm">
+				<label>Title*:</label>
+				<div class="formstyles">
+					<input type="radio" name="title" id="miss" value="Miss" required="required" />Miss
+					<input type="radio" name="title" id="mr" value="mr" required="required" />Mr.
+					<input type="radio" name="title" id="mrs" value="mrs" required="required" />Mrs. <br /><br />
+					<div class="validateform">
+						<label for="firstName">First Name*:</label>
+						<input type="text" name="fname" id="fname" placeholder="First Name" />
+						<br />
+						<div id="error_fname" style="display: none; color: red">
+							Invalid First name, Please enter valid First name.
+						</div>
+						<br />
+					</div>
+					<div class="validateform">
+						<label for="lastName">Last Name*:</label>
+						<input type="text" name="lname" id="lname" placeholder="Last Name" minlength="1"
+							maxlength="40" />
+						<br />
+						<div id="error_lname" style="display: none; color: red">
+							Invalid Last name, Please enter valid Last name.
+						</div>
+						<br />
+					</div>
+					<div class="validateform">
+						<label for="emailId">Email Id*:</label>
+						<input type="text" name="email" id="email" placeholder="yourname@northeastern.edu" />
+						<br />
+						<div id="error_email" style="display: none; color: red">
+							Invalid Email, Please enter valid email.
+						</div>
+
+						<br /><br />
+					</div>
+					<br />
+				</div>
+				<div class="validateform">
+					<label for="phoneNumber">Phone Number*:</label>
+					<input type="text" name="phoneNumber" id="phoneNumber" placeholder="xxx-xxx-xxxx" minlength="13"
+						maxlength="13"  />
+					<br />
+					<div id="error_phoneNumber" style="display: none; color: red">
+						Invalid Phone No, Please enter valid Phone No.
+					</div>
+					<br />
+				</div>
+
+				<div class="validateform">
+					<label for="Address">Address*:</label>
+					<!-- <div class="forwidth"> -->
+				
+						<input type="text" name="streetAddrs1" id="streetAddrs1" placeholder="Street Address 1"
+							minlength="1" maxlength="40"  />
+						<br />
+						<div id="error_streetAddrs1" style="display: none; color: red;">
+							Invalid characters in Address, Please enter valid address 
+						</div>
+						<br />
+						<label for="Address">Street Address Line 2:</label>
+						<input type="text" name="streetAddrs2" id="streetAddrs2" placeholder="Street Address 2"
+							minlength="1" maxlength="40"/>
+						<br />
+				
+						<div id="error_streetAddrs2" style="display: none; color: red;">
+							Invalid characters in Address, Please check or leave blank;
+						</div>
+						<br />
+						<label for="aptNum">Apt No*:</label>
+
+						<input type="text" name="aptNum" id="aptNum" placeholder="Apt Number" minlength="1"
+							maxlength="40"  />
+						<br />
+						<div id="error_aptNum" style="display: none; color: red">
+							Invalid Apt No, Please enter valid Apt No.
+						</div>
+						<br />
+						<br />
+						<label for="city">City *:</label>
+
+						<input type="text" name="city" id="city" placeholder="City Name" minlength="1"
+							maxlength="40"  />
+						<br />
+						<div id="error_city" style="display: none; color: red">
+							Invalid City Name, Please enter valid city Name.
+						</div>
+						<br />
+						<label for="city">State *:</label>
+
+						<input type="text" name="state" id="state" placeholder="State Name" minlength="1"
+							maxlength="40"  />
+						<br />
+						<div id="error_state" style="display: none; color: red">
+							Invalid State Name, Please enter valid State name.
+						</div>
+						<br />
+					<!-- </div> -->
+				</div>
+				<div class="validateform">
+					<label for="zipcode">ZipCode*:</label>
+					<input type="text" name="zipcode" id="zipcode" placeholder="xxxxxx" minlength="5" maxlength="5" />
+					<br />
+					<div id="error_zipcode" style="display: none; color: red">
+						Invalid Zip Code, Please enter valid Zip Code.
+					</div>
+					<br />
+				</div>
+				<div class="validateform">
+					<label for="classFeedbackHeading">Choose a class to give feedback*:</label>
+					<select id="classFeedback" name="classFeedback">
+						<option hidden selected value="selectone">Select One</option>
+						<option  value=""></option>
+						<option  value="info5100">INFO 5100</option>
+						<option value="info6150">INF0 6150</option>
+						<option value="info7210">INFO 7210</option>
+						<option value="info9999">INFO 9999</option>
+						<option value="encp6666">ENCP 6666</option>
+					</select>
+					<div id="error_classFeedback" style="display: none; color: red">
+						Invalid Selection Code, Please Select from the dropdown
+					</div>
+					<br />
+		
+					<div id="classes" style="visibility:hidden">
+					
+						<input type="checkbox" name="checkprof" id="checkprof1" value="Prof 1" onclick="onPresscheckbox()" style="visibility: hidden;"/> Prof 1
+
+						 <input type="checkbox" name="checkprof" id="checkprof2" value="Prof 2" onclick="onPresscheckbox()" style="display: none;"/> Prof 2
+
+						<input type="checkbox" name="checkprof" id="checkprof3" value="Prof 3" onclick="onPresscheckbox()" style="display: none;"/> Prof 3
+
+						<input type="checkbox" name="checkprof" id="checkprof4" value="Prof 4" onclick="onPresscheckbox()" style="display: none;"/> Prof 4
+
+						<input type="checkbox" name="checkprof" id="checkprof5" value="Prof 5" onclick="onPresscheckbox()" style="display: none;"/> Prof 5 
+												
+						</div>
+						<div id="thetextfield" style="visibility: hidden; padding-left: 180px;">
+							<input type="text" name="proftext" id="proftext" placeholder="Give feedback on Prof" />
+
+						</div>
+						<div id="error_classFeedback" style="display: none; color: red">
+							Invalid.
+						</div>
+					</div>
+					<br />
+					<br />
+					<br />
+					<div class="validateform">
+						<label for="refferalsource">How did you hear us?*:</label>
+						<div class="checkboxes">
+							<input type="checkbox" name="sources" id="sources"  value="facebook" />
+							Facebook
+							<input type="checkbox" name="sources" id="sources"  value="google" /> Google
+							<input type="checkbox" name="sources" id="sources" value="yelp" /> Yelp
+							<br />
+							<div id="error_sources" style="display: none; color: red">
+								Invalid. Please Choose one. 
+							</div>
+							<br />
+						</div>
+						<br />
+						<br />
+					</div>
+					<div class="validateform">
+						<label for="comments">Comments*:</label>
+						<textarea name="comments" id="comments" placeholder="Your comments" rows="5" cols="25"
+							minlength="10" maxlength="100"></textarea>
+							<div id="error_comments" style="display: none; color: red">
+								Invalid. Please Enter your comments. 
+							</div>
+						<br /><br />
+					</div>
+
+					<input type="Submit" id="Submit" />
+					<input type="Reset" id="Reset" />
+					<br /><br />
+				</div>
+			</form>
+		</main>
+	</div>
+
+	<br>
+	<br>
+	<br> 
+	<div id="container2">
+		<h1> Results</h1>
+		
+		<table id="tbss">
+			<thead>
+		<tr>
+		  <th>Title </th>
+		  <th>Fullname</th> 
+		  <th>Email Id</th>
+
+		  <th>PhoneNo</th>
+		  <th>Address 1</th>
+		  <th>Address 2</th> 
+		  <th>Apt No.</th>
+		  <th>Zip code</th>
+		  <th>City</th>
+		  <th>State</th>
+		  <th>Class</th> 
+		  <th>Feedback</th> 
+		  <th>Professor Name</th>
+		  <th>Ref Source</th> 
+		  <th>Comments</th> 
+		</tr>
+	</thead>
+	<tbody id="tbl"> </tbody>
+		
+	  </table>
+	
+	</div>
+	<script></script>
+</body>
+
+</html>

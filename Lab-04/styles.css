@@ -1,0 +1,28 @@
+label {
+    float: left;
+    width: 180px;
+}
+
+#container {
+    width: 700px;
+    margin: auto;
+    background-color: beige;
+}
+#container2 {
+    font-family: 'Courier New', Courier, monospace;
+    width: 1200px;
+    margin: auto;
+    background-color: #DCDCF5  /*greywheat*/;
+    padding: 100px;
+    visibility: hidden;
+}
+main {
+    padding: 50px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+  }
+
