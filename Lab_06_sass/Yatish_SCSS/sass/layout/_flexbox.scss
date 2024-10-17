@@ -1,0 +1,15 @@
+//@import '../layout/Flexbox';
+
+// layout/flex.scss
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Aligns items vertically */
+    flex-wrap: wrap; /* Ensures that items wrap when needed */
+  }
+  
+  .flex-item {
+    flex: 1; /* Allows the items to take equal width */
+    padding: 1rem;
+  }
+  

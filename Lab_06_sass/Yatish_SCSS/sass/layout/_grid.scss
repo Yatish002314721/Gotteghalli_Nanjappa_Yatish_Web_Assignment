@@ -1,0 +1,12 @@
+// layout/grid.scss
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
+    gap: 1rem; /* Adds space between grid items */
+  }
+  
+  .grid-item {
+    background-color: #ccc;
+    padding: 1rem;
+  }
+  

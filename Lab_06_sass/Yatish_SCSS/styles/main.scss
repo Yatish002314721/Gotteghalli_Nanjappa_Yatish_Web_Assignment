@@ -1,0 +1,28 @@
+// Import Variables and Mixins
+@import './theme/variables';
+@import './theme/mixins';
+
+// Import Layouts
+@import './layout/flexbox';
+@import './layout/grid';
+
+// Import Components
+@import './components/header';
+@import './components/footer';
+
+/* Main Styles
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+}
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}

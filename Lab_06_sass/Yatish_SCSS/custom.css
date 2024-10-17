@@ -1,0 +1,100 @@
+footer {
+            background-color: #00184C;
+            color: #ffffff;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 0 1.5rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer-links li {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .footer-text {
+            text-align: center;
+            margin-top: 1rem;
+        }
+/* Back to Top Button */
+#backToTopBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 100;
+    background-color: #FF416C;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+}
+
+/* Hover Effect */
+#backToTopBtn:hover {
+    background-color: #FF4B2B;
+    transform: scale(1.1);
+}
+
+/* Show the button */
+#backToTopBtn.show {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+.blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .blog-post {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .blog-post:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .blog-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #00184C;
+        }
+
+        .blog-summary {
+            margin: 1rem 0;
+            color: #555;
+        }
+
+        .blog-date {
+            font-size: 14px;
+            color: #aaa;
+        }

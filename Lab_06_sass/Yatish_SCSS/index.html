@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="custom.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            
+        </div>
+        <ul class="mainmenu">
+            <li><a href="index.html" style="text-decoration:none">Home</a></li>
+            <li><a href="blog.html" style="text-decoration:none">Blog</a></li>
+			<li class="cta">
+            <a class="call-btn animate__animated animate__bounceIn" href="#">Register Now</a>
+        </li>
+        </ul>
+        </nav>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="leftcontent animate__animated animate__fadeInLeft">
+            <h1 class="text-heading">Control and protect your Data</h1>
+            <p>Continuously monitor your environment to detect threats with AWS Security. Learn how we can help you monitor your environment & be more secure in the cloud.</p>
+				<div class="cta">
+            <a class="call-btn" href="#">Learn More</a>
+        </div>
+        </div>
+        <div class="rightcontent animate__animated animate__bounceIn">
+            <img src="img/undraw_personal_data_29co.png" alt="image" />
+        </div>
+		
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="secondsec animate__animated animate__zoomIn">
+        <div class="row">
+            <div>
+                <img src="img/Untitled-1.png" class="secondimg" alt="second image" />
+            </div>
+            <div class="secondcontent">
+                <h1 class="text-heading-2">We are a high-level data storage bank</h1>
+                <p>The place to store various data that you can access at any time through the internet and where you can carry it.</p>
+                <p>The very protected storage area has a high level of warranty to ensure into your own data you must enter the password that you have created when you registered in this Data warehouse.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<button id="backToTopBtn" title="Go to top">↑</button>
+<footer>
+    <div class="footer-container">
+        <ul class="footer-links">
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+            <li>Help</li>
+        </ul>
+        <div class="footer-text">
+            &copy; 2024 Your Company Name. All Rights Reserved.
+        </div>
+    </div>
+</footer>
+<script>
+// Get the button
+const backToTopBtn = document.getElementById("backToTopBtn");
+
+// When the user scrolls down 100px from the top of the document, show the button
+window.onscroll = function () {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopBtn.classList.add("show");
+    } else {
+        backToTopBtn.classList.remove("show");
+    }
+};
+
+// When the user clicks on the button, scroll to the top of the document
+backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+</script>
+</body>
+</html>

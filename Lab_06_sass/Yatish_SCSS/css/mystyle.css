@@ -1,0 +1,133 @@
+:root {
+  --primary-color: #00184C;
+  --secondary-color: #DEDDFF;
+  --cta-color: #ffffff;
+  --cta-hover-color: #f24338;
+}
+
+nav .cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+header {
+  width: 100%;
+  padding: 0 1.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 1rem 0;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+nav .cta .call-btn {
+  background-color: var(--cta-color);
+  color: var(--primary-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  padding: 0.375rem 2.5rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  transition: 250ms ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+nav .cta .call-btn:hover {
+  background-color: var(--cta-hover-color);
+  color: var(--cta-color);
+}
+
+.leftcontent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.leftcontent .text-heading {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--primary-color);
+}
+
+.rightcontent img {
+  width: 100%;
+}
+
+.secondsec {
+  background-color: var(--secondary-color);
+  border-radius: 25px;
+  padding: 2rem;
+}
+.secondsec .secondimg {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.secondsec .secondcontent {
+  padding-top: 1rem;
+}
+.secondsec .secondcontent .text-heading-2 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .cta {
+    margin-top: 1rem;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+}/*# sourceMappingURL=mystyle.css.map */

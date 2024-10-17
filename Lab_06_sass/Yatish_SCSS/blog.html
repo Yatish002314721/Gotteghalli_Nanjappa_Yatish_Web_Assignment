@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="custom.css">
+  </head>
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            
+        </div>
+        <ul class="mainmenu">
+            <li><a href="index.html" style="text-decoration:none">Home</a></li>
+            <li><a href="blog.html" style="text-decoration:none">Blog</a></li>
+			<li class="cta">
+            <a class="call-btn" href="#">Register Now</a>
+        </li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Blog</h1>
+    <div class="blog-grid">
+        <div class="blog-post animate__animated animate__fadeInLeft">
+            <h2 class="blog-title">Blog Post Title 1</h2>
+            <p class="blog-summary">Data privacy is crucial in today's digital landscape. Individuals should practice 
+                data minimization by only sharing necessary information and ensure they give informed consent for 
+                data usage. Regularly reviewing privacy settings on social media and being aware of phishing scams 
+                can further enhance personal data protection.</p>
+            <p class="blog-date">Posted on October 16, 2024</p>
+        </div>
+        <div class="blog-post animate__animated animate__fadeInUp">
+            <h2 class="blog-title">Blog Post Title 2</h2>
+            <p class="blog-summary">To safeguard data from cyber threats, implement strong security measures such 
+                as using complex passwords and enabling two-factor authentication. Keeping software updated, 
+                using firewalls, and regularly backing up data are essential practices that help mitigate risks and 
+                ensure data integrity.</p>
+            <p class="blog-date">Posted on October 15, 2024</p>
+        </div>
+        <div class="blog-post animate__animated animate__bounceIn">
+            <h2 class="blog-title">Blog Post Title 3</h2>
+            <p class="blog-summary">A comprehensive data protection plan is vital for businesses. Start by conducting 
+                a data inventory to identify sensitive information and assess compliance needs. Establish clear data 
+                access controls and invest in employee training to foster a culture of security awareness, 
+                ensuring that everyone understands their role in data protection.</p>
+            <p class="blog-date">Posted on October 14, 2024</p>
+        </div>
+        <div class="blog-post animate__animated animate__fadeInLeft">
+            <h2 class="blog-title">Blog Post Title 4</h2>
+            <p class="blog-summary">Data encryption is a powerful tool for protecting sensitive information from 
+                unauthorized access. By using strong encryption methods for data at rest and in transit, organizations 
+                can secure their data and comply with regulations. Implementing encryption best practices not only 
+                protects privacy but also builds trust with clients and stakeholders</p>
+            <p class="blog-date">Posted on October 13, 2024</p>
+        </div>
+    </div>
+</div>
+<button id="backToTopBtn" title="Go to top">↑</button>
+<footer>
+    <div class="footer-container">
+        <ul class="footer-links">
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+            <li>Help</li>
+        </ul>
+        <div class="footer-text">
+            &copy; 2024 Your Company Name. All Rights Reserved.
+        </div>
+    </div>
+</footer>
+<script>
+// Get the button
+const backToTopBtn = document.getElementById("backToTopBtn");
+
+// When the user scrolls down 100px from the top of the document, show the button
+window.onscroll = function () {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopBtn.classList.add("show");
+    } else {
+        backToTopBtn.classList.remove("show");
+    }
+};
+
+// When the user clicks on the button, scroll to the top of the document
+backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+// SCSS Version of the Code
+
+// Variables
+$primary-color: #00184C;
+$secondary-color: #DEDDFF;
+$cta-color: #ffffff;
+$cta-hover-color: #f24338;
+$font-size-large: 32px;
+$font-size-medium: 16px;
+$font-weight-normal: 400;
+$border-radius: 2rem;
+$container-width: 80%;
+$transition-time: 250ms;
+
+// Custom Properties
+:root {
+  --primary-color: #00184C;
+  --secondary-color: #DEDDFF;
+  --cta-color: #ffffff;
+  --cta-hover-color: #f24338;
+}
+
+// Placeholder for reusable styles
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%grid-template {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+// Mixins
+@mixin flexbox($justify: center, $align: center, $direction: row) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@mixin grid-template($columns: auto-fit, $min: 300px, $gap: 2rem) {
+  display: grid;
+  grid-template-columns: repeat($columns, minmax($min, 1fr));
+  gap: $gap;
+}
+
+// Function for rem conversion
+@function rem($pixels, $context: 16px) {
+  @return ($pixels / $context) * 1rem;
+}
+
+// SCSS Styles
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+header {
+  width: 100%;
+  padding: 0 1.5rem;
+}
+
+nav {
+  @include flexbox(space-between, center);
+  padding: 1rem 0;
+
+  ul {
+    @include flexbox(flex-start, center, row);
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      font-size: $font-size-medium;
+      font-weight: $font-weight-normal;
+      cursor: pointer;
+    }
+  }
+
+  .cta {
+    @extend %flex-center;
+
+    .call-btn {
+      background-color: var(--cta-color);
+      color: var(--primary-color);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+      padding: rem(6px) rem(40px);
+      border-radius: $border-radius;
+      text-transform: uppercase;
+      transition: $transition-time ease;
+      cursor: pointer;
+      text-decoration: none;
+
+      &:hover {
+        background-color: var(--cta-hover-color);
+        color: var(--cta-color);
+      }
+    }
+  }
+}
+
+// Main Content Area
+.row {
+  @extend %grid-template;
+}
+
+.leftcontent {
+  @include flexbox(flex-start, center, column);
+
+  .text-heading {
+    font-size: $font-size-large;
+    font-weight: $font-weight-normal;
+    line-height: 1.5;
+    color: var(--primary-color);
+  }
+}
+
+.rightcontent {
+  img {
+    width: 100%;
+  }
+}
+
+// Second Section Styling
+.secondsec {
+  background-color: var(--secondary-color);
+  border-radius: 25px;
+  padding: 2rem;
+
+  .secondimg {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .secondcontent {
+    padding-top: 1rem;
+
+    .text-heading-2 {
+      font-size: $font-size-large;
+      font-weight: $font-weight-normal;
+      line-height: 1;
+      color: var(--primary-color);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    @include flexbox(flex-start, center, column);
+    gap: 0.5rem;
+  }
+
+  .cta {
+    margin-top: 1rem;
+  }
+
+  .row {
+    @include grid-template(1, 300px, 1rem);
+  }
+}

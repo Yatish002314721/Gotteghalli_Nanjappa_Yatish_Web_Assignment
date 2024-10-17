@@ -1,0 +1,41 @@
+// Placeholder for reusable styles
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  %grid-template {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  // Mixins
+  @mixin flexbox($justify: center, $align: center, $direction: row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+  }
+  
+  @mixin grid-template($columns: auto-fit, $min: 300px, $gap: 2rem) {
+    display: grid;
+    grid-template-columns: repeat($columns, minmax($min, 1fr));
+    gap: $gap;
+  }
+  
+  // Function for rem conversion
+  @function rem($pixels, $context: 16px) {
+    @return ($pixels / $context) * 1rem;
+  }
+// theme/_mixins.scss
+@for $i from 1 through 12 {
+    .col-#{$i} {
+      width: percentage($i / 12);
+    }
+  }
+  
+
+    

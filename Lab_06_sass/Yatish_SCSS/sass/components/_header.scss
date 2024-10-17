@@ -1,0 +1,31 @@
+// Header.scss
+@import '../theme/Variables';
+@import '../theme/Mixins';
+
+header {
+  width: 100%;
+  padding: $header-padding;
+}
+
+// components/_header.scss//nested
+nav {
+    ul {
+      list-style: none;
+      padding: 0;
+  
+      li {
+        display: inline-block;
+        padding: 1rem;
+  
+        &:hover {
+          background-color: $primary-color;
+        }
+  
+        a {
+          text-decoration: none;
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+  

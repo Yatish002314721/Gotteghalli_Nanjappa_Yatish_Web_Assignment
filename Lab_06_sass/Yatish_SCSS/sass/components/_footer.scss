@@ -1,0 +1,30 @@
+// Footer.scss
+@import '../theme/Variables';
+
+footer {
+  background-color: $primary-color;
+  color: $white-color;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-links li a {
+  color: $white-color;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  color: $white-color;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.social-icons a:hover {
+  color: $secondary-color;
+}

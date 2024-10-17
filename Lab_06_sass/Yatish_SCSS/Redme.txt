@@ -1,0 +1,86 @@
+Sass Project with Flexbox and Grid
+This project is a basic website using HTML, CSS (compiled from Sass), and features responsive layouts using Flexbox and CSS Grid. The project is structured to allow for easy customization and scalability.
+
+Table of Contents
+Project Overview
+Features
+Installation
+Folder Structure
+How to Use
+Technologies Used
+License
+Project Overview
+The project demonstrates the use of Sass to structure and manage CSS efficiently while using Flexbox for layout components like the header and footer, and CSS Grid for the main content sections.
+
+Features
+Responsive Layouts using Flexbox and CSS Grid.
+Sass for modular and maintainable CSS.
+Variables for easy theme management (e.g., colors, fonts).
+Mixins for reusable CSS code blocks (e.g., media queries, Flexbox alignment).
+Nesting for cleaner and more readable styles.
+Installation
+Prerequisites
+Node.js and npm installed. Download Node.js here.
+Sass installed globally via npm or using the standalone Sass binary.
+Steps
+Clone the repository or download the project files:
+
+bash
+Copy code
+git clone https://github.com/your-username/sass-project.git
+cd sass-project
+Install Sass globally (if not already installed):
+
+bash
+Copy code
+npm install -g sass
+Compile the Sass into CSS:
+
+bash
+Copy code
+sass scss/style.scss css/style.css
+To watch for changes in the Sass files and automatically compile:
+
+bash
+Copy code
+sass --watch scss/style.scss:css/style.css
+Folder Structure
+The project is organized as follows:
+
+graphql
+Copy code
+sass-project/
+│
+├── scss/                  # Folder for Sass files
+│   ├── _variables.scss    # Sass variables (e.g., colors, fonts)
+│   ├── _mixins.scss       # Reusable Sass mixins (e.g., media queries, Flexbox)
+│   ├── _header.scss       # Styles for the header section
+│   ├── _footer.scss       # Styles for the footer section
+│   ├── _grid.scss         # Styles for CSS Grid layouts
+│   ├── _flexbox.scss      # Styles for Flexbox layouts
+│   └── style.scss         # Main Sass file (imports all partials)
+│
+├── css/                   # Folder for compiled CSS
+│   └── style.css          # Compiled CSS file
+│
+├── index.html             # Main HTML file
+└── README.md              # This README file
+Sass Partial Files
+_variables.scss: Contains all variables (colors, fonts, etc.).
+_mixins.scss: Stores reusable mixins for Flexbox, media queries, etc.
+_header.scss: Contains the header styles using Flexbox.
+_footer.scss: Contains the footer styles.
+_grid.scss: Contains CSS Grid layout styles for the main sections.
+_flexbox.scss: Contains Flexbox layout styles for other responsive sections.
+style.scss: The main Sass file, where all partials are imported.
+How to Use
+Open the index.html file in your browser to see the website.
+Edit the Sass files inside the scss/ folder as needed.
+Use sass --watch scss/style.scss:css/style.css to automatically compile Sass to CSS whenever you make changes.
+Technologies Used
+HTML5: For website structure.
+CSS3: For styling the website, compiled from Sass.
+Sass (SCSS): For writing more maintainable and organized styles.
+Flexbox: For flexible layouts (header, footer, etc.).
+CSS Grid: For creating grid-based layouts.
+Node.js: For managing Sass with npm.

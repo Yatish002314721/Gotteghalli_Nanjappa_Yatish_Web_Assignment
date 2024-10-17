@@ -1,0 +1,36 @@
+// Variables
+$primary-color: #00184C;
+$secondary-color: #DEDDFF;
+$cta-color: #ffffff;
+$cta-hover-color: #f24338;
+$font-size-large: 32px;
+$font-size-medium: 16px;
+$font-weight-normal: 400;
+$border-radius: 2rem;
+$container-width: 80%;
+$transition-time: 250ms;
+
+// Custom Properties for CSS
+:root {
+  --primary-color: #00184C;
+  --secondary-color: #DEDDFF;
+  --cta-color: #ffffff;
+  --cta-hover-color: #f24338;
+}
+// theme/_variables.scss
+$colors: (
+  primary: #F24338,
+  secondary: #00184C,
+  success: #28a745,
+  danger: #dc3545
+);
+
+// Function to fetch colors from map
+@function get-color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+// Usage in components/_header.scss
+.button {
+  background-color: get-color(primary);
+}
