@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,500;1,600;1,700&display=swap');
+
+*{
+    font-family: 'poppins', sans-serif;
+}
+body{
+     background-image: url('../images/login.jpg');
+     background-size: 50%;
+}
+
+p{
+    text-align: center;
+}
+#contact label{
+    display: inline-block;
+
+    text-align: left;
+}
+#contact_submit{
+    width: 100%;
+}
+#contact .uname .email .password .cpassword{
+    margin-top: 1em;
+}
+
+
+.container{
+
+    border-radius: 20px;
+    
+    margin: auto;
+    /*margin-top: 60px; */
+    /* padding: 30px; */
+    max-height: 600px;
+    max-width: 1000px;
+    display: flex;
+    
+    }
+    .left img{
+        max-width: fit-content;
+        max-height: 100%;
+    }
+    
+    .loginside{
+        align-items: center;
+    }
+    .login{
+        color: #00100B;
+    
+        display: grid;
+    
+        align-items: center;
+    
+        
+    }
+    form{
+        height: 500px;
+        overflow: hidden;
+        width: 400px;
+        background-color: rgba(255,255,255,0.13);
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        /* border: 2px solid rgba(255,255,255,0.1); */
+        box-shadow: 0 0 40px rgba(8,7,16,0.6);
+        padding: 50px 35px;
+    }
+  
+    form h3{
+        font-size: 18px;
+        font-weight: 500;
+        /* line-height: 42px; */
+        text-align: center;
+    }
+    
+    label{
+        display: block;
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    input{
+        display: block;
+        height: 30px;
+        width: 100%;
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 300;
+    }
+  
+    
+    
+    button{
+        margin-top: 20px;
+        width: 102%;
+        background-color: #232323;
+        color: #f2f2f2;
+        padding: 15px 0;
+        font-size: 18px;
+        font-weight: 600;
+        /* border-radius: 5px; */
+        cursor: pointer; 
+    }
+    button:hover{
+        background-color: #09c372;
+        
+    }
+
+    button:disabled{
+        background-color: grey;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contact input {
+        border: 2px solid #f0f0f0;
+        border-radius: 4px;
+        display: block;
+        font-size: 12px;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .contact .contact:focus {
+        outline: 0;
+    }
+    
+  .success {
+ 
+        color:#09c372;
+        font-size: 9px;
+        height: 13px;
+
+    }
+    
+    .success_form {
+ 
+        color:#09c372;
+        font-size: 12px;
+        height: 30px;
+
+    }
+.error {
+        color: #ff3860;
+        font-size: 9px;
+
+        height: 13px;
+
+    }
+
+    .error_form {
+        color: #ff3860;
+        font-size: 12px;
+
+        height: 30px;
+
+    }
+      
+    input .error{
+        height: 30px;
+    }

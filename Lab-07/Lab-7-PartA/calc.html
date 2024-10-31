@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./styles/calc.css">
+    <script src="./scripts/calc.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+</head>
+<body>
+  
+    
+        <div class="container">
+            <div class="calculator">
+            <p id="heading"></p>
+            <div class="inputs">
+                <input type="text" placeholder="Enter your First Number" id="fno">
+                <p id="fnoError" class="error"></p>
+                <input type="text" placeholder="Enter your Second Number" id="sno">
+                <p id="snoError" class="error"></p>
+            </div>
+            <div class="button-row">
+                <button class="add">+</button>
+                <button class="subtract">-</button>
+                <button class="multiply">*</button>
+                <button class="divide">/</button>
+            </div>
+
+            <div class="row">
+                <input type="text" placeholder="Answer" id="answer" disabled>
+                <p id="answererror" class="error"></p>
+            </div>
+
+
+            <div class="resetf">
+                <button class="reset">🔄</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
