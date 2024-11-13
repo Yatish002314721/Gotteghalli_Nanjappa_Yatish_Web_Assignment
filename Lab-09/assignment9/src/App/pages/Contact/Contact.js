@@ -5,7 +5,7 @@ import Navbar from '../../components/Navbar/Navbar';
 function Contact() {
   const cardsData = [
     { title: 'Contact Us', description: 'Please contanct us INFO6150' },
-    { title: 'Via email', description: 'suuport@test.com' },
+    { title: 'Via email', description: 'support@test.com' },
   ];
 
   return (
