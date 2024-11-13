@@ -1,0 +1,11 @@
+.container{
+    align-items: center;
+
+    /* width:700px; */
+    /* margin:20px auto; */
+}
+h3{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    text-align: center;
+}
