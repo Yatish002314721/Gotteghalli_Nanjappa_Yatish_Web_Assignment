@@ -1,0 +1,66 @@
+.job-listing-container{
+    max-width:800px;
+    margin:auto;
+    padding:20px;
+}
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.job-list{
+    list-style-type:none;
+    padding:0;
+    margin:0;
+}
+
+.job-list-item{
+    padding:15px;
+    border-bottom:1px solid #ddd;
+    cursor: pointer;
+}
+
+.job-list-item:hover{
+    background-color:#f9f9f9;
+}
+
+.job-title{
+    font-size:1.5em;
+    font-weight:bold;
+    margin:0;
+    color:#333;
+}
+
+.job-description,
+.job-requirements,
+.job-salary,
+.job-lastUpdated{
+    margin:5px;
+    color:#555;
+}
+
+.job-requirements strong,
+.job-salary strong,
+.job-lastUpdated strong{
+    color:#333;
+}
+
+.apply-link{
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 16px;
+    background-color: #007bff;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+.apply-linlk:hover{
+    background-color:#0056b3;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+}
